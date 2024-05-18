@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Портфолио работ</title>
+<style type="text/css">
+ul.menu{
+list-style:none;
+width:8em; 
+padding:0 0 0 0; 
+font-size: 14pt;
+}
+li.submenu{
+width:90%; 
+margin:0.3em 1em 0.3em 0; 
+padding:0.5em; 
+background:#7d7dff;
+}
+h3.mainmenu{
+width:90%; 
+margin:0.3em 1em 0.3em 0; 
+padding:0.5em; 
+background:#7d7dff; 
+}
+li a{
+text-decoration:none; 
+color:#000000; 
+}
+li:hover,li:hover a {
+background:#ff7d7d; 
+color:#000000; 
+cursor:pointer; 
+}
+body{ 
+ background-image: url(i.webp);
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size:cover ;
+}
+</style>
+</head>
+
+<body onload="digitalWatch()" >
+<table border="1" align="center" rules="rows" style="width:60%;">
+<tr>
+<td>
+<table border="0" background="URL" bgcolor="#ff7d7d" cellpadding="10" style="width:100%; border-radius:5px;">
+<tr>
+<td> <img src='logo_png.png' width='150' height='100'> </td>
+<th>
+<h1 style='margin-bottom: -25px; color:blue;'>Портфолио практических работ <br> Недоводеева Романа Викторовича</h1>
+<h4>представлены работы с использованием основ языка веб-программирования JavaScript</h4>
+<h5  align='right' style='margin-bottom: -25px' id="vr"><h5>
+<h5  align='right' id="vr1"><h5>
+</th>
+</tr>
+</table>
+<table border="1" bgcolor="#7d7dff" cellpadding="10" style="width:100%; border-radius:5px;">
+<tr>
+<td bgcolor="#7d7dff" valign='top'>
+<h3 class='mainmenu'>Меню сайта</h3>
+<nav>
+          <ul class='menu'>
+				
+               <li class='submenu'><a href="index.html">Главная</a></li>
+               <li class='submenu'><a href="Фотогалерея.html">Фотогалерея</a></li>
+               <li class='submenu'><a href="Итоговый тест.html" onclick="myWindowOpen11()">Итоговый тест</a></li>
+          </ul>
+</nav>
+
+</td>
+<td  style="width:80%">
+    <script>
+        function Ok(){
+            var Elem="Фамилия:"+document.f.Family.value+"\nИмя:"+document.f.Name.value+"\nГруппа:"+document.f.Group.value;
+            var A= new Array(document.f.t1, document.f.t2, document.f.t3, document.f.t4, document.f.s1, document.f.s2, document.f.s3, 
+            document.f.s4, document.f.t5, document.f.t6, document.f.t7, document.f.t8, document.f.t9, document.f.t10, 
+            document.f.t11, document.f.t12, document.f.t13, document.f.t14, document.f.t15, document.f.t16, document.f.t17, 
+            document.f.s5, document.f.s6, document.f.s7, document.f.s8, document.f.s9, document.f.s10, document.f.s11, document.f.s12, 
+            document.f.s13,document.f.s14, document.f.s15, document.f.s16, document.f.s17, document.f.s18);
+            var Res=0;
+            for (i in A){
+                if(A[i].checked) Res=Res+parseInt(A[i].value);
+            }
+            switch (Res){
+                case 10: alert(Elem+"\nВаша отметка-отлично");
+                break;
+                case 9: alert(Elem+"\nВаша отметка-отлично");
+                break;
+                case 8: alert(Elem+"\nВаша отметка-хорошо");
+                break;
+                case 7: alert(Elem+"\nВаша отметка-хорошо");
+                break;
+                case 6: alert(Elem+"\nВаша отметка-хорошо");
+                break;
+                case 5: alert(Elem+"\nВаша отметка-удовлетворительно");
+                break;
+                case 4: alert(Elem+"\nВаша отметка-удовлетворительно");
+                break;
+                case 3: alert(Elem+"\nВаша отметка-неудовлетворительно");
+                break;
+                case 2: alert(Elem+"\nВаша отметка-неудовлетворительно");
+                break;
+                case 1: alert(Elem+"\nВаша отметка-неудовлетворительно");
+                break;
+                case 0: alert(Elem+"\nВаша отметка-неудовлетворительно");
+
+            }
+        }
+    </script>
+    <form name="f">
+        <h2>Введите свои данные:</h2>
+        <table>
+            <tr><td><b>Фамилия:</b></td>
+                <td><input type="text" name="Family" size="20" onblur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></td></tr>
+            <tr><td><b>Имя:</b></td>
+                <td><input type="text" name="Name" size="20" onblur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></td></tr>
+                <tr><td><b>Группа:</b></td>
+                    <td><select name="Group" size="1">
+                        <option value="1а">1а</option>
+                        <option value="1б">1б</option>
+                        <option value="1в">1в</option>
+                        <option value="1г">1г</option>
+                        <option value="2а">2а</option>
+                        <option value="2б">2б</option>
+                        <option value="2г">2г</option>
+                        <option value="2ж">2ж</option>
+                        <option value="2ю">2ю</option>
+                        <option value="3а">3а</option>
+                        <option value="3б">3б</option>
+                        <option value="3г">3г</option>
+                        <option value="4а">4а</option>
+                        <option value="4б">4б</option>
+                        <option value="4г">4г</option>
+                        <option value="4ж">4ж</option>
+                        <option value="5г">5г</option>
+                        <option value="5ж">5ж</option>
+                    </select></td></tr>
+        </table>
+        <p align="center">
+            <font size="5"><b>Тест</b></font></p>
+            <font size="4">1.<b>Какой метод реализует объединение  всех элементов массива в одну строку?</b><br>
+            <font size="3">
+                <input type="radio" name="a1" id="t1" value="0">reverse()<br>
+                <input type="radio" name="a1" id="t2" value="0">sort()<br>    
+                <input type="radio" name="a1" id="t3" value="1">join()<br>
+                <input type="radio" name="a1" id="t4" value="0">concat()<br>
+                <br><br>
+
+            <font size="4">2.<b>Какие методы позволяют оргонизовать ввод информации?</b><br>
+                <font size="3">
+                    <input type="checkbox" name="a2" id="s1" value="0">alert<br>
+                    <input type="checkbox" name="a2" id="s2" value="0">window.open<br>    
+                    <input type="checkbox" name="a2" id="s3" value="1">prompt<br>
+                    <input type="checkbox" name="a2" id="s4" value="0">document.write<br>
+                    <br><br>
+
+            <font size="4">3.<i>Напишите полным ответом.</i><b>Представление документа в виде дерева тегов, доступное для изменения через JavaScript-это...</b><br> 
+                <font size="3">
+                    <input type="radio" name="a3" id="t5" value="1">Объектная модель документа<br>
+                    <input type="radio" name="a3" id="t6" value="0">Объектная модель браузера<br>    
+                    <br><br>
+
+            <font size="4">4.<b>Какая функция преобразует указанную в параметре строку в целое число?</b><br> 
+                <font size="3">
+                    <input type="radio" name="a4" id="s5" value="0">parseFloat()<br>
+                    <input type="radio" name="a4" id="s6" value="0">isNaN<br>
+                    <input type="radio" name="a4" id="s7" value="1">parseInt()<br>    
+                    <br><br>
+
+            <font size="4">5.<b>Оператор осуществляющий выход из цикла.</b><br> 
+                <font size="3">
+                    <input type="radio" name="a5" id="t7" value="0">continue<br>
+                    <input type="radio" name="a5" id="t8" value="1">break<br>    
+                    <input type="radio" name="a5" id="t9" value="0">exit<br>    
+                    <br><br>
+
+            <font size="4">6.<b>Свойства объекта ошибки указывающий тип ошибки.</b><br> 
+                <font size="3">
+                    <input type="radio" name="a6" id="s8" value="0">stock<br>    
+                    <input type="radio" name="a6" id="s9" value="0">message<br>
+                    <input type="radio" name="a6" id="s10" value="1">name<br>    
+                    <br><br>
+
+            <font size="4">7.<b>Свойства объекта String указывающий длину строки.</b><br> 
+                <font size="3">
+                    <input type="radio" name="a7" id="t10" value="1">str.length()<br>    
+                    <input type="radio" name="a7" id="t11" value="0">str.charAt()<br>
+                    <input type="radio" name="a7" id="t12" value="0">str.concat()<br> 
+                    <input type="radio" name="a7" id="t13" value="0">str.index()<br>    
+                    <br><br>
+
+            <font size="4">8.<b>Метод объекта Array объединяющий массивы.</b><br> 
+                <font size="3">
+                    <input type="radio" name="a8" id="s11" value="0">arr.length()<br>    
+                    <input type="radio" name="a8" id="s12" value="0">arr.join()<br>
+                    <input type="radio" name="a8" id="s13" value="1">arr.concat()<br> 
+                    <input type="radio" name="a8" id="s14" value="0">arr.reverse()<br>    
+                    <br><br>
+
+            <font size="4">9.<b>Метод выводящий текущий год.</b><br> 
+                <font size="3">
+                    <input type="radio" name="a9" id="t14" value="1">getFullYear()<br>    
+                    <input type="radio" name="a9" id="t15" value="0">setYear()<br>
+                    <input type="radio" name="a9" id="t16" value="0">getMonth()<br> 
+                    <input type="radio" name="a9" id="t17" value="0">setDate()<br>    
+                     <br><br>
+
+            <font size="4">10.<b>Объукт-это...</b><br> 
+                <font size="3">
+                    <input type="radio" name="a10" id="s15" value="0">переменная в рамках объекта, используемая для получения значений
+                     или установки нового.<br>    
+                    <input type="radio" name="a10" id="s16" value="0">упорядоченный набор свойств.<br>
+                    <input type="radio" name="a10" id="s17" value="1">Совокупность свойств, мтодов, коллекций и событий, 
+                    предоставляемых браузером в рамках объектной модели.<br> 
+                    <input type="radio" name="a10" id="s18" value="0">какое-либо действие пользователя или момент работы браузера.<br>    
+                    <br><br>
+                    <p align="center"><input onclick="Ok();" type="button" value="Результат тестирования">
+                    <input type="reset" name="reset" value="Сброс"></p>      
+    </form>
+<hr color='blue'>
+</td>
+</tr>
+</table>
+<table
+border="1"
+bgcolor="#ff7d7d"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<th>
+<h6>	&#169; Недоводеев Роман, 2022 <br>
+студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+</h6>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script>
+    function digitalWatch(){
+            var v=new Date();
+            var a=v.getDate();
+            var b=v.getMonth();
+            var c=v.getFullYear();
+            var d=v.getHours();
+            var e=v.getMinutes();
+            var f=v.getSeconds();
+            setInterval('digitalWatch()', 1000);
+            document.getElementById('vr').innerHTML=a+'.'+b+'.'+c;
+            document.getElementById('vr1').innerHTML=d+'.'+e+'.'+f;}
+</script>
+
+</body>
+</html>

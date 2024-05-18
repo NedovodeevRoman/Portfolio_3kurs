@@ -1,0 +1,14 @@
+<body onload="digitalWatch()">
+    d<b id="v"></b>
+    <Script>
+        function digitalWatch(){
+        var v=new Date();
+        var a=v.getHours();
+        var b=v.getMinutes();
+        var c=v.getSeconds();
+        setInterval('digitalWatch()', 1000);
+        document.getElementById('v').innerHTML=a+':'+b+':'+c; 
+        
+        }
+    </Script>
+</body>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Портфолио работ</title>
+<style type="text/css">
+ul.menu{
+list-style:none;
+width:8em; 
+padding:0 0 0 0; 
+font-size: 14pt;
+}
+li.submenu{
+width:90%; 
+margin:0.3em 1em 0.3em 0; 
+padding:0.5em; 
+background:#7d7dff;
+}
+h3.mainmenu{
+width:90%; 
+margin:0.3em 1em 0.3em 0; 
+padding:0.5em; 
+background:#7d7dff; 
+}
+li a{
+text-decoration:none; 
+color:#000000; 
+}
+li:hover,li:hover a {
+background:#ff7d7d; 
+color:#000000; 
+cursor:pointer; 
+}
+body{ 
+ background-image: url(i.webp);
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size:cover;
+ background-attachment: fixed;
+}
+</style>
+</head>
+
+<body onload="digitalWatch()" >
+<table border="1" align="center" rules="rows" style="width:60%;">
+<tr>
+<td>
+<table border="0" background="URL" bgcolor="#ff7d7d" cellpadding="10" style="width:100%; border-radius:5px;">
+<tr>
+<td> <img src='logo_png.png' width='150' height='100'> </td>
+<th>
+<h1 style='margin-bottom: -25px; color:blue;'>Портфолио практических работ <br> Недоводеева Романа Викторовича</h1>
+<h4>представлены работы с использованием основ языка веб-программирования JavaScript</h4>
+<h5  align='right' style='margin-bottom: -25px' id="vr"><h5>
+<h5  align='right' id="vr1"><h5>
+</th>
+</tr>
+</table>
+<table border="1" bgcolor="#7d7dff" cellpadding="10" style="width:100%; border-radius:5px;">
+<tr>
+<td bgcolor="#7d7dff" valign='top'>
+<h3 class='mainmenu'>Меню сайта</h3>
+<nav>
+          <ul class='menu'>
+				
+               <li class='submenu'><a href="index.html">Главная</a></li>
+               <li class='submenu'><a href="Фотогалерея.html">Фотогалерея</a></li>
+               <li class='submenu'><a href="Итоговый тест.html">Итоговый тест</a></li>
+          </ul>
+</nav>
+
+</td>
+<td  style="width:80%">
+<h2 align='center'>Список практических работ:</h2>
+<ol>
+<li  onclick="myWindowOpen()"> Практическая работа №1 «Разработка веб-страниц с использованием простейших операторов».
+<li > Практическая работа №2 «Использование условных операторов и оператора выбора».
+     <ul>
+          <li onclick="myWindowOpen1a()"> Задание 1</li>
+          <li onclick="myWindowOpen1b()"> Задание 2</li>
+          <li onclick="myWindowOpen1c()"> Задание 3</li>
+          <li onclick="myWindowOpen1d()"> Задание 4</li>
+          <li onclick="myWindowOpen1e()"> Задание 5</li>
+     </ul>
+<li onclick="myWindowOpen2()"> Практическая работа №3 «Использование операторов цикла при составлении сценариев».
+    <ul>
+        <li onclick="myWindowOpen2a()"> Задание 1</li>
+        <li onclick="myWindowOpen2b()"> Задание 2</li>
+        <li onclick="myWindowOpen2c()"> Задание 3</li>
+        <li onclick="myWindowOpen2d()"> Задание 4</li>
+        <li onclick="myWindowOpen2e()"> Задание 5</li>
+   </ul>
+<li onclick="myWindowOpen3()"> Практическая работа №4 «Использование функций при составлении сценариев».
+    <ul>
+        <li onclick="myWindowOpen3a()"> Задание 1</li>
+        <li onclick="myWindowOpen3b()"> Задание 2</li>
+   </ul>
+<li onclick="myWindowOpen4()"> Практическая работа №5 «Работа со строками в языке JavaScript».
+<li onclick="myWindowOpen5()"> Практическая работа №6 «Разработка сценариев с использованием массивов».
+<li onclick="myWindowOpen6()"> Практическая работа №7 «Использование пользовательских объектов».
+<li onclick="myWindowOpen7()"> Практическая работа №8 «Работа с объектами браузера и документа».
+<li onclick="myWindowOpen8()"> Практическая работа №9 «Работа с изображениями. Создание таблиц».
+    <ul>
+        <li onclick="myWindowOpen8a()"> Задание 1</li>
+        <li onclick="myWindowOpen8b()"> Задание 2</li>
+        <li onclick="myWindowOpen8c()"> Задание 3</li>
+        <li onclick="myWindowOpen8d()"> Задание 4</li>
+        <li onclick="myWindowOpen8e()"> Задание 5</li>
+        <li onclick="myWindowOpen8f()"> Задание 6</li>
+        <li onclick="myWindowOpen8g()"> Задание 7</li>
+        <li onclick="myWindowOpen8h()"> Задание 8</li>
+        <li onclick="myWindowOpen8l()"> Задание 9</li>
+   </ul>
+<li onclick="myWindowOpen9()"> Практическая работа №10 «Разработка скриптов с использованием обработчиков событий».
+    <ul>
+        <li onclick="myWindowOpen9a()"> Задание 1</li>
+        <li onclick="myWindowOpen9b()"> Задание 2</li>
+        <li onclick="myWindowOpen9c()"> Задание 3</li>
+        <li onclick="myWindowOpen9d()"> Задание 4</li>
+   </ul>
+<li onclick="myWindowOpen10()">Практическая работа №11 «Работа с элементами формы».
+</ol>
+<hr color='blue'>
+</td>
+</tr>
+</table>
+<table
+border="1"
+bgcolor="#ff7d7d"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+<th>
+<h6>	&#169; Недоводеев Роман, 2022 <br>
+студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+</h6>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script>
+function digitalWatch(){
+        var v=new Date();
+        var a=v.getDate();
+        var b=v.getMonth();
+        var c=v.getFullYear();
+        var d=v.getHours();
+        var e=v.getMinutes();
+        var f=v.getSeconds();
+        setInterval('digitalWatch()', 1000);
+        document.getElementById('vr').innerHTML=a+'.'+b+'.'+c;
+        document.getElementById('vr1').innerHTML=d+'.'+e+'.'+f;}
+
+var myWindow;
+        function myWindowOpen(){
+            myWindow=window.open('Практическая работа №1.html',
+            'myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+
+        var myWindow;
+        function myWindowOpen1a(){
+            myWindow=window.open('work2.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+
+        var myWindow;
+        function myWindowOpen1b(){
+            myWindow=window.open('Практическая работа №2, задание 1.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+
+        var myWindow;
+        function myWindowOpen1c(){
+            myWindow=window.open('Практическая работа №2, задание 2.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+
+        var myWindow;
+        function myWindowOpen1d(){
+            myWindow=window.open('Практическая работа №2, задание 3.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+
+        var myWindow;
+        function myWindowOpen1e(){
+            myWindow=window.open('Практическая работа №2, задание 4.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen2a(){
+            myWindow=window.open('Практическая работа №5 задание 1.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen2b(){
+            myWindow=window.open('Практическая работа №5 задание 2.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen2c(){
+            myWindow=window.open('Практическая работа №5 задание 3.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen2d(){
+            myWindow=window.open('Практическая работа №5 задание 4.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen2e(){
+            myWindow=window.open('Практическая работа №5 задание 5.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen3a(){
+            myWindow=window.open('Практическая работа №6 задание 1.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen3b(){
+            myWindow=window.open('Практическая работа №6 задание 2.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen4(){
+            myWindow=window.open('Практическая работа №3.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen5(){
+            myWindow=window.open('Практическая работа №4.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen6(){
+            myWindow=window.open('Практическая работа №7.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8a(){
+            myWindow=window.open('Практическая работа №8 задание 1.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8b(){
+            myWindow=window.open('Практическая работа №8 задание 2.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8c(){
+            myWindow=window.open('Практическая работа №8 задание 3.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8d(){
+            myWindow=window.open('Практическая работа №8 задание 4.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8e(){
+            myWindow=window.open('Практическая работа №8 задание 5.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8f(){
+            myWindow=window.open('Практическая работа №8 задание 6.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8g(){
+            myWindow=window.open('Практическая работа №10 задание 1.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8h(){
+            myWindow=window.open('Практическая работа №10 задание 2.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen8l(){
+            myWindow=window.open('Практическая работа №10 задание 3.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen9a(){
+            myWindow=window.open('Практическая работа №11 задание 1.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen9b(){
+            myWindow=window.open('Практическая работа №11 задание 2.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen9c(){
+            myWindow=window.open('Практическая работа №11 задание 3.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen9d(){
+            myWindow=window.open('Практическая работа №11 задание 4.html','myWindow','top=250 left=500 width=250 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen7(){
+            myWindow=window.open('Практическая работа №9.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        var myWindow;
+        function myWindowOpen10(){
+            myWindow=window.open('Практическая работа №12.html','myWindow','top=250 left=250 width=500 height=500');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+
+        
+</script>
+
+</body>
+</html>

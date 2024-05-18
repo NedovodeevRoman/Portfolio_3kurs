@@ -1,0 +1,76 @@
+<body>
+    <h1>Домашнее задание</h1>
+    Исходный массив- <b id="m1"></b><br>
+    Новый массив- <b id="m2"></b>
+    <script>
+        var a=['Коля','Петя'];
+        var b=[',Леша','Данил','Вадим','Максим,'];
+        document.getElementById('m1').innerHTML=a;
+        a1=a.shift();
+        a2=a.pop();
+        a3=a1.concat(b,a2);
+        document.getElementById('m2').innerHTML=a3;
+    </script>
+    <h1>Задание №1</h1>
+    Исходный массив- <b id="m3"></b><br>
+    Отсортираванный массив- <b id="m4"></b><br>
+    Длинна массива- <b id="m5"></b>
+    <script>
+        var arr=[34,15,78,0,23,22];
+        document.getElementById('m3').innerHTML=arr;
+        a=arr.sort(function compare(a, b) 
+        { if (a<b)
+         { return 1;} if (a>b) 
+         {return -1;}});
+        a1=arr.length;
+        document.getElementById('m4').innerHTML=a;
+        document.getElementById('m5').innerHTML=a1;
+    </script>    
+    <h1>Задание №2</h1>
+    Массив а:<br>
+    <b id="m6"></b><br>
+    Массив b:<br>
+    <b id="m7"></b><br>
+    Массив А=а.concat(b):<br>
+    <b id="m8"></b><br>
+    Массив А после выполнения команды А.reverse():<br>
+    <b id="m9"></b><br>
+    Массив А после Выполнения команды А.shift():<br>
+    <b id="m10"></b><br>
+    Массив А после Выполнения команды А.pop():<br>
+    <b id="m11"></b><br>
+    Массив А после Выполнения команды А.unshift():<br>
+    <b id="m12"></b><br>
+    Массив А после Выполнения команды А.push(1,0):<br>
+    <b id="m13"></b><br>
+    Значение выражения А.slice(2,6):<br>
+    <b id="m14"></b><br>
+    Массив А после Выполнения команды А.slice(2,6):<br>
+    <b id="m15"></b><br>
+    Массив А после Выполнения команды А.splice(3,2,-1,-2,-3):<br>
+    <b id="m16"></b><br>
+    <script>
+        var a=[1,2,3];
+        var b=['x','y','z'];
+        document.getElementById('m6').innerHTML=a.join('|');
+        document.getElementById('m7').innerHTML=b.join('|');
+        A=a.concat(b);
+        document.getElementById('m8').innerHTML=A.join('|');
+        A1=A.reverse();
+        document.getElementById('m9').innerHTML=A1.join('|');
+        A2=A.shift();
+        document.getElementById('m10').innerHTML=A2;
+        A3=A.pop();
+        document.getElementById('m11').innerHTML=A3;
+        A4=A.unshift(10,20,30);
+        document.getElementById('m12').innerHTML=A4;
+        A5=A.push(1,0);
+        document.getElementById('m13').innerHTML=A5;
+        A6=A.slice(2,6);
+        document.getElementById('m14').innerHTML=A6.join('|');
+        A7=A.slice(2,6);
+        document.getElementById('m15').innerHTML=A7.join('|');
+        A8=A.splice(3,2,-1,-2,-3);
+        document.getElementById('m16').innerHTML=A8.join('|');
+    </script>
+</body>

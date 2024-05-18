@@ -1,0 +1,59 @@
+<body>
+    <h1>Задание 1</h1>
+    Исходное слово-<b>информатика</b><br>
+    Первое слово <b id="sl1"></b><br>
+    Второе слово <b id="sl2"></b><br>
+    Третье слово <b id="sl3"></b><br>
+    <script>
+        var a='информатика';
+        var b=a.slice('2','6');
+        var c=a.substr('9','1');
+        var d=a.substr('3','1');
+        var e=a.substr('7','1');
+        var x=c.concat(d,e);
+        var y=a.substr('2','1');
+        var z=a.substr('8','1');
+        var f=a.substr('4','3');
+        var g=y.concat(z,f);
+        document.getElementById('sl1').innerHTML=b;
+        document.getElementById('sl2').innerHTML=x;
+        document.getElementById('sl3').innerHTML=g;
+    </script>
+    <h1>Задание 2</h1>
+    Исходная фраза-<b>"Сегодня хорошая погода"</b><br>
+    Изменённая фраза-<B>"</B><b id="f"></b><b>"</b>
+    <script>
+        var a='Сегодня хорошая погода';
+        var b=a.replace('хорошая','прекрасная');
+        document.getElementById('f').innerHTML=b;
+    </script>
+    <h1>Задание 3</h1>
+    Исходное слово-<b>"анкетирование"</b><br>
+    Первое слово-<b>"<b id="s1"></b>"</b><br>
+    Второе слово-<b>"<b id="s2"></b>"</b><br>
+    Третье слово-<b>"<b id="s3"></b>"</b><br>
+    Четвёртое слово-<b>"<b id="s4"></b>"</b><br>
+    Пятое слово-<b>"<b id="s5"></b>"</b><br>
+    <script>
+        var a='анкетирование';
+        var b=a.substr('0','5');
+        var c=a.substr('0','1');
+        var s1=b.concat(c);
+        var s2=a.substr('4','3');
+        var d=a.substr('4','1');
+        var e=a.substr('7','1');
+        var f=a.substr('6','1');
+        var s3=d.concat(e,f,d);
+        var g=a.substr('6','2');
+        var h=a.substr('2','1');
+        var s4=g.concat(h);
+        var q=a.substr('4','3');
+        var w=a.substr('0','2');
+        var s5=q.concat(w);
+        document.getElementById('s1').innerHTML=s1;
+        document.getElementById('s2').innerHTML=s2;
+        document.getElementById('s3').innerHTML=s3;
+        document.getElementById('s4').innerHTML=s4;
+        document.getElementById('s5').innerHTML=s5;
+    </script>
+</body>
