@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html><head><title>Информация о браузере</title></head>
+<body>
+    <h1>Задание 1</h1>
+    <h3>Инеформация о web-браузере пользователя</h3><hr>
+    <script>
+        var firstn=prompt('Введите ваше имя:','Ваше имя')
+        document.write('Привет,'+firstn+'. Вы используете:'+navigator.appName+'. Версия:'+navigator.appVersion+'<br>');
+        document.write('Язык браузера:'+navigator.language+'<br>');
+        document.write('Название ОС:'+navigator.oscpu+'<br>');
+        document.write('Геолокация:'+navigator.geolocation+'<br>');
+        document.write('Платформа:'+navigator.platform+'<br>');
+        document.write('Движок:'+navigator.userAgent+'<br>');
+    </script>
+
+
+    <h1>Задание 2</h1>
+    <ol type="I">
+        <li id="fr"><b>Фрукты:</b><a href='https://translated.turbopages.org/proxy_u/en-ru.ru.5d2565a3-637b3269-c59a7482-74722d776562/https/en.wikipedia.org/wiki/Fruiting'>Фрукты</a></li>
+        <ul type="disc">
+            <li><u>Яблоки</u></li>
+            <li><u>Груши</u></li>
+            <li><u>Бананы</u></li>
+        </ul>
+        <li id="ov"><b>Овощи:</b><a href='https://ru.wikipedia.org/wiki/Овощи'>Овощи</a></li>
+        <ul >
+            <li><u>Помидоры</u></li>
+            <li id="k"><u>Картошка</u></li>
+        </ul>
+    </ol>
+    <script>
+        oList=document.getElementById('ov')
+        document.write('Родительский этемент тега li-'+oList.parentElement.nodeName+'<br>');
+        document.write('Дочерный этемент тега li-'+oList.children[0].nodeName+'<br>');
+        document.write('Первый дочерный этемент тега li-'+oList.firstElementChild.nodeName+'<br>');
+        document.write('Последний дочерный этемент тега li-'+oList.lastElementChild.nodeName+'<br>');
+        document.write('Предыдущий сестренския этемент тега -'+oList.previousElementSibling.nodeName+'<br>');
+        document.write('Последующий сестренския этемент тега -'+oList.nextElementSibling.nodeName+'<br>');
+        list=document.getElementById('k');
+        document.write(k.innerText='Огурцы');
+    </script>
+
+
+    <h1>Задание 3</h1>
+    <b>Расписание уроков:</b><ol id="s">
+        <li>Програмирование</li>
+        <li>Математика</li>
+        <li>Информатика</li>
+        <li>Физическая культура</li>
+    </ol>
+    <script>
+      oList=document.getElementById('s');
+      newItem=document.createElement('LI');
+      newText=document.createTextNode('Русский язык');
+      newItem.appendChild(newText);
+      oList.appendChild(newItem);
+        
+      newItem5=document.createElement('LI');
+      newText5=document.createTextNode('Веб-дизайн');
+      newItem5.appendChild(newText5);
+      curItem=oList.children[2];
+      oList.insertBefore(newItem5,curItem);
+      oList.removeChild(oList.children[4]);
+    </script>
+
+
+    <h1>Задание 4</h1>
+    <script>
+        var myWindow;
+        function myWindowOpen(){
+            myWindow=window.open('http://yandex.ru','myWindow','top=250 left=250 width=250 height=250');
+        }
+        function myWindowCloce () {
+            if (myWindow) {
+                myWindow.close();
+                myWindow=null;
+            }
+        }
+    </script>
+    <button onclick="myWindowOpen()">Открыть окно</button>
+    <button onclick="myWindowCloce()">Закрыть окно</button>
+</body>
+</html>

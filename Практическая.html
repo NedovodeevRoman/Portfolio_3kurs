@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок страницы</title>
+</head>
+<body>
+    <script>
+        function Car(name, model, color){
+            this.name=name;
+            this.model=model;
+            this.color=color;
+        }
+        var myCar= new Car("LadaNiva", "Legend", "Black");
+        document.write (myCar.name + '<br>');
+        document.write (myCar.model + '<br>');
+        document.write (myCar.color + '<br>');
+        Car.prototype.owner="Иванов П.Н."
+        document.write (myCar.owner + '<br>');
+    </script>
+</body>
+</html>

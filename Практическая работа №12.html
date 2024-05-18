@@ -1,0 +1,79 @@
+<html>
+    <head><title>Тест</title></head>
+    <body>
+        <script>
+            function Ok(){
+                var Elem="Фамилия:"+document.f.Family.value+"\nИмя:"+document.f.Name.value+"\nГруппа:"+document.f.Group.value;
+                var A= new Array(document.f.t1, document.f.t2, document.f.t3, document.f.t4, document.f.s1, document.f.s2, document.f.s3, 
+                document.f.s4, document.f.t5, document.f.t6);
+                var Res=0;
+                for (i in A){
+                    if(A[i].checked) Res=Res+parseInt(A[i].value);
+                }
+                switch (Res){
+                    case 3: alert(Elem+"\nВаша отметка-отлично");
+                    break;
+                    case 2: alert(Elem+"\nВаша отметка-хорошо");
+                    break;
+                    case 1: alert(Elem+"\nВаша отметка-удовлетворительно");
+                    break;
+                    case 0: alert(Elem+"\nВаша отметка-неудовлетворительно");
+
+                }
+            }
+        </script>
+        <form name="f">
+            <h2>Введите свои данные:</h2>
+            <table>
+                <tr><td><b>Фамилия:</b></td>
+                    <td><input type="text" name="Family" size="20" onblur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></td></tr>
+                <tr><td><b>Имя:</b></td>
+                    <td><input type="text" name="Name" size="20" onblur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></td></tr>
+                    <tr><td><b>Группа:</b></td>
+                        <td><select name="Group" size="1">
+                            <option value="1а">1а</option>
+                            <option value="1б">1б</option>
+                            <option value="1в">1в</option>
+                            <option value="1г">1г</option>
+                            <option value="2а">2а</option>
+                            <option value="2б">2б</option>
+                            <option value="2г">2г</option>
+                            <option value="2ж">2ж</option>
+                            <option value="2ю">2ю</option>
+                            <option value="3а">3а</option>
+                            <option value="3б">3б</option>
+                            <option value="3г">3г</option>
+                            <option value="4а">4а</option>
+                            <option value="4б">4б</option>
+                            <option value="4г">4г</option>
+                            <option value="4ж">4ж</option>
+                            <option value="5г">5г</option>
+                            <option value="5ж">5ж</option>
+                        </select></td></tr>
+            </table>
+            <p align="center">
+                <font size="5"><b>Тест</b></font></p>
+                <font size="4">1.<b>Какой метод реализует объединение  всех элементов массива в одну строку?</b><br>
+                <font size="3">
+                    <input type="radio" name="a1" id="t1" value="0">reverse()<br>
+                    <input type="radio" name="a1" id="t2" value="0">sort()<br>    
+                    <input type="radio" name="a1" id="t3" value="1">join()<br>
+                    <input type="radio" name="a1" id="t4" value="0">concat()<br>
+                    <br><br>
+                <font size="4">2.<b>Какие методы позволяют оргонизовать ввод информации?</b><br>
+                    <font size="3">
+                        <input type="checkbox" name="a2" id="s1" value="0">alert<br>
+                        <input type="checkbox" name="a2" id="s2" value="0">window.open<br>    
+                        <input type="checkbox" name="a2" id="s3" value="1">prompt<br>
+                        <input type="checkbox" name="a2" id="s4" value="0">document.write<br>
+                        <br><br>
+                <font size="4">3.<i>Напишите полным ответом.</i><b>Представление документа в виде дерева тегов, доступное для изменения через JavaScript-это...</b><br> 
+                    <font size="3">
+                        <input type="radio" name="a3" id="t5" value="1">Объектная модель документа<br>
+                        <input type="radio" name="a3" id="t6" value="0">Объектная модель браузера<br>    
+                        <br><br>
+                        <p align="center"><input onclick="Ok();" type="button" value="Результат тестирования">
+                        <input type="reset" name="reset" value="Сброс"></p>      
+        </form>
+    </body>
+</html>
